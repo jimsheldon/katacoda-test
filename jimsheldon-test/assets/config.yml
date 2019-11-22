@@ -1,0 +1,7 @@
+rules_folder: alert_rules
+es_host: localhost
+es_port: 9200
+run_every:
+  seconds: 10
+buffer_time:
+  seconds: 10
