@@ -6,11 +6,11 @@
   "details": {
     "steps": [
       {
-        "title": "Step 1",
+        "title": "Install Elasticsearch",
         "text": "step1.md"
       },
       {
-        "title": "Step 2",
+        "title": "Install Elastalert",
         "text": "step2.md"
       },
       {
