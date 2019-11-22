@@ -33,6 +33,10 @@
         {
           "file": "docker-compose.yml",
           "target": "~/"
+        },
+        {
+          "file": "myfile.txt",
+          "target": "~/"
         }
       ]
     }
