@@ -1,7 +1,7 @@
 Install elastalert dependencies:
 ```
 pip2 install elasticsearch==5.2.0
-```
+```{{execute}}
 
 Install elastalert:
 ```

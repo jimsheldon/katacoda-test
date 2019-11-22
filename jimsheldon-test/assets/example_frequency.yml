@@ -1,7 +1,7 @@
 name: Frequency Example
 type: frequency
 index: logstash-*
-num_events: 
+num_events: 2
 timeframe:
   hours: 4
 filter:
