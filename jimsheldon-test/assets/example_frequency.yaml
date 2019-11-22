@@ -1,0 +1,11 @@
+name: Frequency Example
+type: frequency
+index: logstash-*
+num_events: 
+timeframe:
+  hours: 4
+filter:
+- term:
+    some_field: "some_value"
+alert:
+- debug

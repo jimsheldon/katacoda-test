@@ -1,3 +1,8 @@
+Install elastalert dependencies:
+```
+pip2 install elasticsearch==5.2.0
+```
+
 Install elastalert:
 ```
 pip2 install elastalert==0.1.36
@@ -10,7 +15,7 @@ Create an index with `elastalert-create-index`:
 elastalert-create-index --index=elastalert_status --config config.yml
 ```{{execute}}
 
-Check elasticsearch logs:
+Check elasticsearch logs for a line that says it created the `elastalert_status` index:
 ```
 docker logs elasticsearch | grep "creating index"
 ```{{execute}}
