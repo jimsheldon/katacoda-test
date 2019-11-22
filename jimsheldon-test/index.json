@@ -34,8 +34,9 @@
           "file": "config.yml",
           "target": "~/"
         },
+        {
           "file": "example_frequency.yml",
-          "target": "~/alert_rules/"
+          "target": "~/"
         }
       ]
     }
