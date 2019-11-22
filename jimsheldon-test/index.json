@@ -29,7 +29,7 @@
       "text": "finish.md"
     },
     "assets": {
-      "client": [
+      "hostt01": [
         {
           "file": "docker-compose.yml",
           "target": "~/"
@@ -45,6 +45,6 @@
     "uilayout": "editor-terminal"
   },
   "backend": {
-    "imageid": "docker"
+    "imageid": "ubuntu"
   }
 }
