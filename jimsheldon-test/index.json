@@ -29,11 +29,7 @@
       "text": "finish.md"
     },
     "assets": {
-      "hostt01": [
-        {
-          "file": "docker-compose.yml",
-          "target": "~/"
-        },
+      "host01": [
         {
           "file": "config.yml",
           "target": "~/"
