@@ -37,6 +37,10 @@
         {
           "file": "example_frequency.yml",
           "target": "~/"
+        },
+        {
+          "file": "docker-compose.yml",
+          "target": "~/"
         }
       ]
     }

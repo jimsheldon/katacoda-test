@@ -15,7 +15,3 @@ Create an index with `elastalert-create-index`:
 elastalert-create-index --index=elastalert_status --config config.yml
 ```{{execute}}
 
-Check elasticsearch logs for a line that says it created the `elastalert_status` index:
-```
-docker logs elasticsearch | grep "creating index"
-```{{execute}}
