@@ -41,6 +41,10 @@
         {
           "file": "docker-compose.yml",
           "target": "~/"
+        },
+        {
+          "file": "heartbeat.yml",
+          "target": "~/"
         }
       ]
     }
