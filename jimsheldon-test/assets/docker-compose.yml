@@ -1,0 +1,27 @@
+version: '3.2'
+
+services:
+  elasticsearch:
+    image: elasticsearch:5.2.1
+    ports:
+      - "9200:9200"
+      - "9300:9300"
+    environment:
+      ES_JAVA_OPTS: "-Xmx256m -Xms256m"
+      DISCOVERY_TYPE: single-node
+
+  heartbeat:
+    image: docker.elastic.co/beats/heartbeat:5.2.1
+    volumes:
+      - './heartbeat.yml:/usr/share/heartbeat/heartbeat.yml:ro'
+    depends_on:
+      - elasticsearch
+
+#  kibana:
+#    image: docker.elastic.co/kibana/kibana:5.2.1
+#    ports:
+#      - "5601:5601"
+#    environment:
+#      ELASTICSEARCH_URL: "http://elasticsearch:9200"
+#    depends_on:
+#      - elasticsearch
