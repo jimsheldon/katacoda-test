@@ -1,11 +1,6 @@
-Start elasticsearch:
+Start processes with `docker-compose`:
 ```
-docker run -d -p 9200:9200 -p 9300:9300 -e "discovery.type=single-node" --name elasticsearch elasticsearch:5.2.1
-```{{execute}}
-
-Verify elasticsearch container is running:
-```
-docker ps
+docker-compose up
 ```{{execute}}
 
 Verify elasticsearch is accessible:
