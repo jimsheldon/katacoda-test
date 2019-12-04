@@ -45,8 +45,8 @@ A list of Elasticsearch query DSL filters that is used to query Elasticsearch.
 For more information writing filters, see
 [Writing Filters](https://elastalert.readthedocs.io/en/latest/recipes/writing_filters.html#writingfilters).
 
-In this example, each document has the field `host: elasticsearch`, so we can
-write our alert based on that.
+In this example, each heartbeat document has the field `host: elasticsearch`, so
+we can write our alert based on that.
 
 ```
 alert:

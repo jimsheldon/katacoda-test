@@ -18,11 +18,11 @@
         "text": "step3.md"
       },
       {
-        "title": "Run ElastAlert",
+        "title": "Start ElastAlert",
         "text": "step4.md"
       },
       {
-        "title": "Test",
+        "title": "Trigger alert",
         "text": "step5.md"
       }
     ],

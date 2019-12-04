@@ -1,13 +1,22 @@
-`echo "Run in T1"`{{execute T1}}
+Now let's stop the heartbeat process and watch our alert trigger.
 
-<pre>`echo "Run in T1"`{{execute T1}}</pre>
+```
+docker-compose stop heartbeat
+```{{execute T1}}
 
+You should have two terminal tabs now, click "Terminal 2" to watch the output
+from ElastAlert.
 
-`echo "Run in T2"`{{execute T2}}
+Within 10 seconds you should see output similar to:
+```
+INFO:elastalert:Flatline Example
 
-<pre>`echo "Run in T2"`{{execute T2}}</pre>
+An abnormally low number of events occurred around 2019-12-04 22:38 UTC.
+Between 2019-12-04 22:38 UTC and 2019-12-04 22:38 UTC, there were less than 5 events.
 
-
-`echo "No Terminal Defined"`{{execute}}
-
-<pre>`echo "No Terminal Defined"`{{execute}}</pre>
+@timestamp: 2019-12-04T22:38:48.788164Z
+count: 3
+key: all
+num_hits: 7
+num_matches: 1
+```
