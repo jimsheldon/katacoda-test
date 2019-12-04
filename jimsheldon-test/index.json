@@ -23,7 +23,8 @@
       }
     ],
     "intro": {
-      "text": "intro.md"
+      "text": "intro.md",
+      "courseData": "preLaunch.sh"
     },
     "finish": {
       "text": "finish.md"
