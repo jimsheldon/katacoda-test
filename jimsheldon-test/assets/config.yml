@@ -3,6 +3,6 @@ es_host: localhost
 es_port: 9200
 writeback_index: elastalert_status
 run_every:
-  minutes: 1
+  seconds: 10
 buffer_time:
-  minutes: 10
+  minutes: 1

@@ -1,9 +1,9 @@
 name: Flatline Example
 type: flatline
 index: heartbeat
-threshold: 1
+threshold: 5
 timeframe:
-  minutes: 1
+  seconds: 30
 filter:
 - query:
     query_string:
