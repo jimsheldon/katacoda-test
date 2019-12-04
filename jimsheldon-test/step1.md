@@ -1,6 +1,6 @@
 Start processes with `docker-compose`:
 ```
-docker-compose up
+docker-compose up -d
 ```{{execute}}
 
 Verify elasticsearch is accessible:
@@ -26,3 +26,13 @@ When elasticsearch is ready, it will return something like this:
   "tagline" : "You Know, for Search"
 }
 ```
+
+At this point you will have two containers running, one for elasticsearch, and
+another for
+[heartbeat](https://www.elastic.co/guide/en/beats/heartbeat/5.2/index.html). The
+heartbeat writes a document to the `heartbeat` index every five seconds.
+
+You can examine the structure of the index with curl:
+```
+curl localhost:9200/heartbeat/?pretty
+```{{execute}}

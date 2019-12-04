@@ -1,12 +1,12 @@
 name: Flatline Example
 type: flatline
 index: heartbeat
-threshold: 5
-timeframe:
-  seconds: 30
 filter:
 - query:
     query_string:
       query: "host: elasticsearch"
 alert:
 - debug
+threshold: 5
+timeframe:
+  seconds: 30
