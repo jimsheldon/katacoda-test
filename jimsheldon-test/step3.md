@@ -1,5 +1,3 @@
-## Flatline Example
-
 ElastAlert has many
 [rule types](https://elastalert.readthedocs.io/en/latest/ruletypes.html)
 available, in this example we will use the

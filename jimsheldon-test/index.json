@@ -6,7 +6,7 @@
   "details": {
     "steps": [
       {
-        "title": "Install Elasticsearch",
+        "title": "Start Elasticsearch and Heartbeat",
         "text": "step1.md"
       },
       {
@@ -20,6 +20,10 @@
       {
         "title": "Run ElastAlert",
         "text": "step4.md"
+      },
+      {
+        "title": "Test",
+        "text": "step5.md"
       }
     ],
     "intro": {
