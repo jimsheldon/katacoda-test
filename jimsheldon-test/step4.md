@@ -1,7 +1,7 @@
 Start elastalert:
 ```
 elastalert --config config.yml --debug --rule example_flatline.yml
-```{{execute}}
+```{{execute T2}}
 
 You should see output similar to:
 ```
@@ -17,4 +17,13 @@ INFO:elastalert:Sleeping for 9.824992 seconds
 Since the heartbeat process is writing more than 5 documents that match our
 query every 30 seconds, no alert is triggered.
 
-Now let's stop the heartbeat process
+Now let's stop the heartbeat process and watch our alert trigger.
+
+```
+docker-compose stop heartbeat
+```{{execute T1}}
+
+You should have two terminal tabs now, click "Terminal 2" to watch the output
+from ElastAlert.
+
+
