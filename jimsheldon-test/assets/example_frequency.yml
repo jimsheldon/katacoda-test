@@ -1,11 +1,12 @@
 name: Frequency Example
-type: frequency
-index: logstash-*
-num_events: 2
+type: flatline
+index: heartbeat
+threshold: 1
 timeframe:
-  hours: 4
+  minutes: 1
 filter:
-- term:
-    some_field: "some_value"
+- query:
+    query_string:
+      query: "host: elasticsearch"
 alert:
 - debug
