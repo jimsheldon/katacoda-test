@@ -4,8 +4,8 @@ available, in this example we will use the
 [flatline](https://elastalert.readthedocs.io/en/latest/ruletypes.html#flatline)
 rule type.
 
-In the editor view on the right, double-click the `example_flatline.yml` file.
-Let's examine each line of this file:
+As you read about each parameter, click the "Copy to Editor" button, at the end
+you will have a working alert rule.
 
 ### Common Options
 
