@@ -54,6 +54,9 @@
       ]
     }
   },
+  "files": [
+    "example_flatline.yml"
+  ],
   "environment": {
     "uilayout": "editor-terminal"
   },
