@@ -11,9 +11,9 @@ Let's examine each line of this file:
 
 These options are common to any ElastAlert rule.
 
-```
+<pre class="file" data-filename="example_flatline.yml" data-target="replace">
 name: Flatline Example
-```
+</pre>
 
 The name of the rule. This *must be unique across all rules*. The name will be
 used in alerts and used as a key when writing and reading search metadata back
